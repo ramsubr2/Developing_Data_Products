@@ -1,0 +1,14 @@
+# How to Run the CollegescorecardApp
+Ramesh Subramanian  
+September 23, 2015  
+
+## CollegescorecardApp - U.S. College Earnings and Debt Data Analysis
+
+###  This ShinyApp visualizes College Earnings and Debt Data for 7804 U.S. Colleges based on the recently released report by U.S. Government
+
+#### Original Data source: https://collegescorecard.ed.gov/data/
+
+#### The data required for this analysis was extracted from the original data, median values were imputed for missing (NA) values and may have introduced some bias 
+
+#### The project is deployed on RStudio's shiny server at: https://ramsubr2.shinyapps.io/CollegescorecardApp
+
