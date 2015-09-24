@@ -7,8 +7,8 @@ shinyUI(fluidPage (
   
   sidebarLayout(
     sidebarPanel(
-      helpText("Mean Earnings and Debt data for 7804 U.S.Colleges, 6 years after completion of
-               undergraduate degree"), 
+      helpText("Ranking of Mean Earnings and Debt data for 7804 U.S.Colleges, 6 years after completion of
+               undergraduate degree. Select an input from the dropdown box below to see the results"), 
   
       selectInput("var", 
                   label = "Choose data to display",

@@ -2,9 +2,9 @@ library(shiny)
 library(dplyr)
 library(data.table)
 
-print("Starting reading data file")
+#print("Starting reading data file")
 college_data_earnings <- data.table(read.csv("data/earnings.csv",header=TRUE))
-print("Finished reading data file")
+#print("Finished reading data file")
 mean_earnings_sorted <- arrange(college_data_earnings,desc(md_earn_wne_p6))
 
 setnames(mean_earnings_sorted,"INSTNM","College Name")
@@ -34,11 +34,11 @@ gt_25k_earnings_display_bottom25 <- gt_25k_earnings_sorted[(nr-24):nr,]
 gt_25k_earnings_display_bottom25 <- subset(gt_25k_earnings_display_bottom25,select=c("College Name","% earning more than $25K/year"))
 
 debt_data <- summarise(college_data_earnings, 
-                       median(LO_INC_DEBT_MDN), 
-                       median(MD_INC_DEBT_MDN),
-                       median(HI_INC_DEBT_MDN))
+                       Median_Debt_Low_Income = median(LO_INC_DEBT_MDN), 
+                       Median_Debt_Medium_Income = median(MD_INC_DEBT_MDN),
+                       Median_Debt_High_Income = median(HI_INC_DEBT_MDN))
 
-                                                      
+
 shinyServer(
   function(input, output) {
     output$text1 <- renderText({ 
