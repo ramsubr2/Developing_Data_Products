@@ -12,3 +12,6 @@ September 23, 2015
 
 #### The project is deployed on RStudio's shiny server at: https://ramsubr2.shinyapps.io/CollegescorecardApp
 
+#### The server.R and ui.R files can be found at: https://github.com/ramsubr2/Developing_Data_Products/tree/master/Course_Project
+
+
