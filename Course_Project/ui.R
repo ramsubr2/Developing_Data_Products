@@ -12,8 +12,8 @@ shinyUI(fluidPage (
   
       selectInput("var", 
                   label = "Choose data to display",
-                  choices = list("Top 20 colleges for earnings",
-                                 "Bottom 20 Colleges for earnings",
+                  choices = list("Top 25 colleges for earnings",
+                                 "Bottom 25 Colleges for earnings",
                                  "% students earning > $25K among top 25 Colleges",
                                  "% students earning > $25K among bottom 25 Colleges",
                                  "Average Debt among Low, Medium and High Income families"),

@@ -46,8 +46,8 @@ shinyServer(
     })
     output$school_table <- renderTable({ 
       var <- switch(input$var, 
-                     "Top 20 colleges for earnings" = mean_earnings_display_top25,
-                     "Bottom 20 Colleges for earnings" = mean_earnings_display_bottom25,
+                     "Top 25 colleges for earnings" = mean_earnings_display_top25,
+                     "Bottom 25 Colleges for earnings" = mean_earnings_display_bottom25,
                      "% students earning > $25K among top 25 Colleges" = gt_25k_earnings_display_top25,
                      "% students earning > $25K among bottom 25 Colleges" = gt_25k_earnings_display_bottom25,
                      "Average Debt among Low, Medium and High Income families" = debt_data)
